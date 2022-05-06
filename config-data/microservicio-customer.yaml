@@ -1,6 +1,6 @@
 #config
 server:
-  port: 8090
+  port: 8092
   error:
     include-message: always
 
@@ -24,7 +24,7 @@ spring:
       enabled: true
 
   datasource:
-    url: jdbc:h2:mem:testdb
+    url: jdbc:h2:mem:customerdb
     driverClassName: org.h2.Driver
     username: sa
     password:
