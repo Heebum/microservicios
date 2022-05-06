@@ -7,17 +7,19 @@ spring:
       server:
         git:
           uri: https://github.com/Heebum/microservicios.git
+          clone-on-start: true
 #          uri: git@github.com:Heebum/microservicios.git
           searchPath: config-data
           username: ${GIT_USER}
-          PASSWORD: ${GIT_PASS}
+          password: ${GIT_PASS}
           default-label: data
           timeout: 4
 
-  security:
-    user:
-      name: root
-      password: s3cr3t
+#  security:
+#    user:
+#      name: root
+#      password: s3cr3t
+
   application:
     name: config-server
 
